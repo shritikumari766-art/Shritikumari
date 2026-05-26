@@ -14,5 +14,10 @@
 
 ---
 [![](https://komarev.com/ghpvc/?username=shritikumari766-art &icon=0&color=0)](https://visitcount.itsvg.in)
+## 🎮 Game Time: GitHub Snake  
 
-<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
+Watch my contributions come alive! 🐍✨  
+
+![GitHub Snake Light](https://github.com/shritikumari766-art/Shritikumari/blob/gh-pages/snake.svg#gh-light-mode-only)  
+![GitHub Snake Dark](https://github.com/shritikumari766-art/Shritikumari/blob/gh-pages/snake.svg#gh-dark-mode-only)  
+
