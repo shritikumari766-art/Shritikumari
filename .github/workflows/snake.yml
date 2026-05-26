@@ -1,0 +1,29 @@
+name: Generate Snake Game
+
+on:
+  schedule:
+    - cron: "0 0 * * *"   # Runs daily at midnight
+  workflow_dispatch:       # Allow manual trigger
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4   # ✅ Updated to v4
+
+      - name: Generate Snake Game SVG
+        uses: Platane/snk@v3        # ✅ Latest version
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: dist/snake.svg
+
+      - name: Push Snake Game to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4   # ✅ Updated to v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: dist
